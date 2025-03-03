@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:where(.css-dev-only-do-not-override-1v613y0).ant-card [class^="ant-card"],
+:where(.css-dev-only-do-not-override-1v613y0).ant-card [class*=" ant-card"] {
+  font-size: 16px !important;
+  line-height: 20px !important;
+  font-weight: 400 !important;
+  color: #231f20 !important;
+  padding: 16px !important;
+  border-left: #2e60cf !important;
+  border-left: 3px !important;
+  display: flex;
+  flex-direction: row;
+}
+
+@media (min-width: 768px) {
+  :where(.css-dev-only-do-not-override-1v613y0).ant-card [class^="ant-card"],
+  :where(.css-dev-only-do-not-override-1v613y0).ant-card [class*=" ant-card"] {
+    font-size: 24px !important;
+    line-height: 30px !important;
+    color: #231f20 !important;
+    padding: 40px !important;
+    border-left: #2e60cf !important;
+    border-left: 3px !important;
+    width: 1000px;
+   
+  }
+}
+
+
+:where(.css-dev-only-do-not-override-1v613y0).ant-radio-group {
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+}
+
+:where(.css-dev-only-do-not-override-1v613y0)[class^="ant-radio"]
+  [class^="ant-radio"],
+:where(.css-dev-only-do-not-override-1v613y0)[class*=" ant-radio"]
+  [class^="ant-radio"],
+:where(.css-dev-only-do-not-override-1v613y0)[class^="ant-radio"]
+  [class*=" ant-radio"],
+:where(.css-dev-only-do-not-override-1v613y0)[class*=" ant-radio"]
+  [class*=" ant-radio"] {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+:where(.css-dev-only-do-not-override-1v613y0).ant-btn-variant-solid {
+  color: #fff;
+  background: #2e60cf;
+}
+
+@media (min-width: 768px) {
+  .css-dev-only-do-not-override-1v613y0.ant-radio-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.dot-spinner {
+  position: relative;
+  width: 126px;
+  height: 126px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rotate 1.5s linear infinite;
+}
+
+.dot-spinner div {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #1d5fd3;
+  border-radius: 50%;
+}
+
+.dot-spinner div:nth-child(1) {
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.dot-spinner div:nth-child(2) {
+  top: 10px;
+  right: 20px;
+}
+.dot-spinner div:nth-child(3) {
+  top: 30px;
+  right: 5px;
+}
+.dot-spinner div:nth-child(4) {
+  top: 50px;
+  right: 0px;
+}
+.dot-spinner div:nth-child(5) {
+  top: 70px;
+  right: 5px;
+}
+.dot-spinner div:nth-child(6) {
+  bottom: 10px;
+  right: 20px;
+}
+.dot-spinner div:nth-child(7) {
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.dot-spinner div:nth-child(8) {
+  bottom: 10px;
+  left: 20px;
+}
+.dot-spinner div:nth-child(9) {
+  bottom: 30px;
+  left: 5px;
+}
+.dot-spinner div:nth-child(10) {
+  bottom: 50px;
+  left: 0px;
+}
+.dot-spinner div:nth-child(11) {
+  bottom: 70px;
+  left: 5px;
+}
+.dot-spinner div:nth-child(12) {
+  top: 10px;
+  left: 20px;
+}
+
+@media (min-width: 768px) {
+:where(.css-dev-only-do-not-override-1v613y0)[class^="ant-radio"] [class^="ant-radio"], :where(.css-dev-only-do-not-override-1v613y0)[class*=" ant-radio"] [class^="ant-radio"], :where(.css-dev-only-do-not-override-1v613y0)[class^="ant-radio"] [class*=" ant-radio"], :where(.css-dev-only-do-not-override-1v613y0)[class*=" ant-radio"] [class*=" ant-radio"] {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column-reverse;
+}
+}
+
+@media (min-width: 768px) {
+:where(.css-dev-only-do-not-override-1v613y0).ant-btn.ant-btn-block {
+  width: 160px;
+}
+}
