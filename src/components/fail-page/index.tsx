@@ -4,12 +4,12 @@ import Link from 'next/link'
 export default function ThanksPage() {
     return (
         <div className="relative bg-[#F4F8FE]">
-            <img src="image/PioneroBackground.png" alt="PioneroBackground" className="absolute bottom-0 right-0 top-[40%] w-[300px] h-auto z-0 md:top-[10%] md:w-[450px]" />
-            <img src="image/Polygon 1.png" alt="Polygon" className="absolute top-[60%] md:top-[40%] left-[10%] w-[50px] md:w-[106px]" />
-            <img src="image/Ellipse 1.png" alt="Ellipse" className="absolute top-[80%] left-[5%] md:left-[30%] w-[40px] md:w-[80px]"/>
+            <Image src="/image/PioneroBackground.png" alt="PioneroBackground" width={0} height={0} className="absolute bottom-0 right-0 top-[40%] w-[300px] h-auto z-0 md:top-[10%] md:w-[450px]" />
+            <Image src="/image/Polygon 1.png" alt="Polygon"  width={0} height={0} className="absolute top-[60%] md:top-[40%] left-[10%] w-[50px] md:w-[106px]" />
+            <Image src="/image/Ellipse 1.png" alt="Ellipse"  width={0} height={0} className="absolute top-[80%] left-[5%] md:left-[30%] w-[40px] md:w-[80px]"/>
             <div className="flex items-center justify-between px-[20px] pt-[20px] md:pl-[359px] md:pr-[363px] pb-[25px]">
                 <div className="flex items-center">
-                    <img
+                    <Image
                         src="/image/logo_pionero.png"
                         alt="Pionero Logo"
                         width={37}
@@ -32,7 +32,7 @@ export default function ThanksPage() {
                 </div>
             </div>
             <div className="flex flex-col items-center px-[20px] pt-[153.5px] pb-[430.5px] text-center">
-                <img
+                <Image
                     src="/image/StickX.png"
                     alt="Stick X"
                     width={80}
@@ -43,9 +43,9 @@ export default function ThanksPage() {
                     <p>A problem<br /> occurred</p>
                 </div>
                 <div className="font-medium text-base leading-5 text-center ">
-                    <a href="/" className="text-[#2E60CF] hover:underline">
+                    <Link href="/" className="text-[#2E60CF] hover:underline">
                         Please evaluate again
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

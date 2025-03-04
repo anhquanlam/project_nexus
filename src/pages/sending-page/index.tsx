@@ -1,11 +1,16 @@
 import React from 'react'
-import AppFooter from '../../components/footer/index'
+import Head from 'next/head'
 import SendingPages from '../../components/sending-page/index'
 
 export default function ThanksPage() {
     return (
-        <div className="flex min-h-screen flex-col">
-            <SendingPages />
-        </div>
+        <>
+            <Head>
+                <title>Loading Page</title>
+            </Head>
+            <div className="flex min-h-screen flex-col">
+                <SendingPages />
+            </div>
+        </>
     )
 }

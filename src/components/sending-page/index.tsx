@@ -1,12 +1,11 @@
 import Image from 'next/image'
-import Link from 'next/link'
 
 export default function SendingPage() {
     return (
         <div className="relative bg-[#F4F8FE]">
             <div className="flex items-center justify-between px-[20px] pt-[20px] md:pl-[359px] md:pr-[363px] pb-[25px]">
                 <div className="flex items-center">
-                    <img
+                    <Image
                         src="/image/logo_pionero.png"
                         alt="Pionero Logo"
                         width={37}
@@ -29,7 +28,7 @@ export default function SendingPage() {
                 </div>
             </div>
             <div className="flex flex-col items-center justify-center h-screen gap-[25px]">
-            <img
+            <Image
                         src="/image/Loading.png"
                         alt="Loading"
                         width={126}
